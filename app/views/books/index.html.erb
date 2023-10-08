@@ -1,0 +1,16 @@
+<div class='header'>
+  <h1>100 of the world's best books</h1>
+</div>
+<div class='main'>
+  <% @books.each do |book| %>
+    <div>
+        <div>
+          <div class="body">
+            <h3><%= book.title.titleize %></h3>
+            <p> Author: <%=book.author.titleize %></p>
+            <p> Year: <%=book.year %></p>
+          </div>
+        </div>
+    </div>
+  <% end %>
+</div>
