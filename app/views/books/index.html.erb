@@ -1,6 +1,13 @@
 <div class='header'>
   <h1>100 of the world's best books</h1>
 </div>
+<p> Sort by:
+<div class='sort-buttons'>
+  <p> <%= link_to 'Author', books_path(order: 'author') %> </p>
+  <p> <%= link_to 'Title', books_path(order: 'title') %> </p>
+  <p> <%= link_to 'Year', books_path(order: 'year') %> </p>
+</div>
+</p>
 <div class='main'>
   <% @books.each do |book| %>
     <div>
