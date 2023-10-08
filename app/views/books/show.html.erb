@@ -1,0 +1,12 @@
+<%=link_to 'Back', :root %>
+
+<h1><%=@book.title.titleize%></h1>
+  <p class='image'><%=@book.imageLink%></p>
+    <div class="single-book-body">
+      <p> Author: <%=@book.author%></p>
+      <p> Country: <%=@book.country%></p>
+      <p> Language: <%=@book.language%></p>
+      <p> Pages: <%=@book.pages%></p>
+      <p> Year: <%=@book.year%></p>
+      <p> Wiki: <%=link_to "#{@book.link}", "#{@book.link}", target: '_blank'%></p>
+    </div>

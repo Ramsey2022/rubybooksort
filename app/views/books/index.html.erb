@@ -13,7 +13,7 @@
     <div>
         <div>
           <div class="body">
-            <h3><%= book.title.titleize %></h3>
+            <h3><%= link_to (book.title.titleize), book_path(book) %></h3>
             <p> Author: <%=book.author.titleize %></p>
             <p> Year: <%=book.year %></p>
           </div>
