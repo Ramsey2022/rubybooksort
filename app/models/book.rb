@@ -8,7 +8,4 @@ validates :pages, presence:true
 validates :pages, numericality: { only_integer: true }
 validates :title, presence:true
 validates :year, presence:true, numericality: { only_integer: true }
-
-
-
 end
